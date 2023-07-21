@@ -1,0 +1,378 @@
+/*Meta*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h2,
+h3,
+nav {
+    padding: 0;
+    margin: 0;
+}
+
+/*font*/
+.primary-typeface {
+    font-family: 'Lato', sans-serif;
+}
+
+.secondary-typeface {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.accent-typeface {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 4px;
+    line-height: 1.4;
+
+    @media(max-width:1140px) and (min-width: 960px) {
+        font-size: 2rem;
+    }
+
+    @media(max-width:960px) and (min-width: 540px) {
+        font-size: 1.75rem;
+    }
+
+    @media(max-width:540px) {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+}
+
+/*header*/
+header.bg {
+    background-color: rgba(239, 237, 234, 0.80);
+    position: relative;
+}
+
+header .secondary-typeface {
+    font-size: 1.5rem;
+
+    @media(max-width:720px) {
+        font-size: 1.25rem;
+    }
+}
+
+/*navbar*/
+.nav-item .secondary-typeface {
+    font-size: 2.5rem;
+
+    @media (max-width:540px){
+        font-size: 1.5rem;
+    }
+}
+
+.nav-container {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    padding-left: 60vw;
+    padding-top: 20vh;
+    background-color: rgba(235, 232, 229, 0.80);
+}
+
+/*hero*/
+.hero .bg {
+    background: url('./assets/images/Architectural/slow-robotics/hero.jpg') no-repeat center center;
+    background-size: cover;
+    height: 75vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.hero-bg-text {
+    background-color: rgba(235, 232, 229, 0.80);
+    width: 100vw;
+}
+
+/*connect*/
+.connect .bg {
+    background-color: #d7d2cb;
+    height: 14vh;
+
+    @media(max-width:992px)and (min-width: 540px) {
+        height: 18vh;
+        padding: 2rem 0 2rem 0;
+    }
+
+    @media(max-width: 540px) {
+        height: 24vh;
+        padding: 2rem 0 2rem 0;
+    }
+}
+
+.connect .secondary-typeface {
+    font-size: 14px;
+    letter-spacing: 2px;
+
+    @media(max-width: 540px) {
+        font-size: 12px;
+    }
+}
+
+/*about*/
+.about.bg {
+    background-color: #ebe8e5;
+}
+
+.about-profile img {
+    border-radius: 150px;
+    border: solid 4px #b1956c;
+    width: 150px;
+}
+
+.about .secondary-typeface {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: white;
+    background-color: #252525;
+    max-width: 8rem;
+    min-width: 5rem;
+}
+
+.about h3 {
+    font-size: 1.5rem;
+    color: #b1956c;
+    letter-spacing: 8px;
+}
+
+.about article {
+    font-size: 18px;
+
+    @media(max-width:540px) {
+        font-size: 14px;
+    }
+}
+
+.about-vert-line {
+    border-left: 3px solid #b1956c;
+}
+
+.about-education {
+    @media(max-width:540px) {
+        font-size: 14px;
+    }
+}
+
+.about .btn {
+    background: #d7d2cb;
+    border-radius: 0.5rem;
+    font-family: 'Playfair Display', serif;
+    color: #252525;
+    font-size: 18px;
+    border: 0px;
+
+    @media(max-width:540px) {
+        font-size: 14px;
+    }
+}
+
+/*projects*/
+
+/*projects-title*/
+.projects .container {
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+
+    @media(max-width:540px) {
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+    }
+}
+
+.projects .title {
+    letter-spacing: 5px;
+    background-color: #efedea;
+    display: inline-block;
+
+    @media(max-width:540px) {
+        font-size: 1.25rem;
+        letter-spacing: 3px;
+        display: inline-block;
+    }
+}
+
+.projects .title-description {
+    font-size: 1.25rem;
+
+    @media(max-width:540px) {
+        font-size: 1rem;
+    }
+}
+
+/*projects-img*/
+.web .projects-img {
+    background-color: #d7d2cb;
+}
+
+.projects-img {
+    width: 18vw;
+    aspect-ratio: 1/1;
+    position: relative;
+
+    @media(min-width:1200px) {
+        min-width: 320px;
+    }
+
+    @media(min-width:992px) and (max-width:1199px) {
+        min-width: 270px;
+    }
+
+    @media(min-width:540px)and (max-width:991px) {
+        min-width: 240px;
+    }
+
+    @media(min-width:280px)and (max-width:539px) {
+        min-width: 200px;
+    }
+
+    @media(max-width:280px) {
+        min-width: 180px;
+    }
+}
+
+.arch-img-01 {
+    background-image: url('./assets/images/Architectural/slow-robotics/c1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.arch-img-02 {
+    background-image: url('./assets/images/Architectural/infrast-ecotone/c1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300%;
+}
+
+.arch-img-03 {
+    background-image: url('./assets/images/Architectural/st-lukes/c1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 280%;
+}
+
+.projects-img-text h3 {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+
+    @media(max-width:540px) {
+        font-size: 0.75rem;
+    }
+}
+
+.projects-img-text h4 {
+    font-size: 1rem;
+    margin-top: 2.5rem;
+    background-color: #efedea;
+    display: inline-block;
+
+    @media(max-width:540px) {
+        font-size: 0.75rem;
+    }
+}
+
+.projects-img-text p {
+    font-size: 0.75rem;
+    margin: 0;
+
+    @media(max-width:540px) {
+        font-size: 0.5rem;
+    }
+}
+
+/*projects-hover*/
+.projects-img-text {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects-img:hover .projects-img-text {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+/*projects-click*/
+.carousel-inner {
+    width: 70vh;
+
+    @media(max-width:540px) {
+        width: 20vh;
+    }
+}
+
+/*
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.arch-img-01:active,
+#arch-carousel-02 {
+    border: 1px solid pink;
+}
+.arch-img-01:active, .arch-img-02:active, .arch-img-03:active{
+    display: none;
+}
+*/
+
+/*footer*/
+.contact.bg {
+    background-color: #333333;
+    color: white;
+}
+
+footer h2 {
+    font-size: 2rem;
+}
+
+footer h3 {
+    font-size: 19px;
+    color: #666666;
+}
+
+.contacts-info p {
+    font-size: 1.5rem;
+
+    @media(max-width:540px) {
+        font-size: 1rem;
+    }
+}
+
+.contact-section>* {
+    padding-bottom: 1.5rem;
+}
+
+.contacts-social a {
+    color: white;
+}
+
+.copyright p {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+
+    @media(max-width:540px) {
+        font-size: 0.75rem;
+    }
+}
+
+.copyright.bg {
+    background-color: #3f3f3f;
+    color: white;
+}
